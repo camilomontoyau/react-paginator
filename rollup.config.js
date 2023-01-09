@@ -31,9 +31,7 @@ module.exports = [
         extensions: ['.css', '.scss'],
         extract: 'types/style/main.scss'
       }),
-      babel({
-        exclude: 'node_modules/**'
-      }),
+      babel(),
       resolve(),
       commonjs(),
       visualizer(),
