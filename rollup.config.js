@@ -1,15 +1,15 @@
-import babel from '@rollup/plugin-babel';
-import commonjs from '@rollup/plugin-commonjs';
-import external from 'rollup-plugin-peer-deps-external';
-import postcss from 'rollup-plugin-postcss';
-import resolve from '@rollup/plugin-node-resolve';
-import { visualizer } from 'rollup-plugin-visualizer';
-import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
+const babel = require('@rollup/plugin-babel');
+const commonjs = require('@rollup/plugin-commonjs');
+const external = require('rollup-plugin-peer-deps-external');
+const postcss = require('rollup-plugin-postcss');
+const resolve = require('@rollup/plugin-node-resolve');
+const { visualizer } = require('rollup-plugin-visualizer');
+const typescript = require('@rollup/plugin-typescript');
+const dts = require('rollup-plugin-dts');
 
-import pkg from './package.json' assert { type: "json" };
+const pkg = require('./package.json');
 
-export default [
+module.exports = [
   {
     input: './src/lib/index.ts',
     output: [
