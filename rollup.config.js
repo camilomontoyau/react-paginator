@@ -44,6 +44,6 @@ module.exports = [
     input: 'dist/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: "es" }],
     external: [/\.scss$/],
-    plugins: [dts()],
+    plugins: [dts.default()],
   }
 ]
