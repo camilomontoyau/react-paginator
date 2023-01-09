@@ -16,7 +16,7 @@ Run the following command:
 ```javascript
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import Paginator from 'react-hooks-paginator';
+import Paginator from '@camilomontoyau/react-hooks-paginator';
 
 function App() {
   const [offset, setOffset] = useState(0);
